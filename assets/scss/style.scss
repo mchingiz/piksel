@@ -1,0 +1,105 @@
+// Partials
+@import "partials/_variables.scss";
+@import "partials/_animations.scss";
+
+// General styles for tags
+html,body{
+	
+}
+
+a:hover, a:focus{
+	text-decoration: none;
+}
+
+h1{
+	font-family:'Lato',sans-serif;}
+p{
+	font-family: 'Raleway',sans-serif;}
+// General classes
+
+#header{
+	background-image: url(../img/bg1.jpg);
+	background-size: cover;
+	background-position: top left;
+	nav{
+		line-height: 60px;
+		background: -moz-linear-gradient(top,  rgba(0,0,0,0.12) 0%, rgba(142,142,142,0) 55%, rgba(234,234,234,0) 91%, rgba(255,255,255,0) 99%);
+		background: -webkit-linear-gradient(top,  rgba(0,0,0,0.12) 0%,rgba(142,142,142,0) 55%,rgba(234,234,234,0) 91%,rgba(255,255,255,0) 99%);
+		background: linear-gradient(to bottom,  rgba(0,0,0,0.12) 0%,rgba(142,142,142,0) 55%,rgba(234,234,234,0) 91%,rgba(255,255,255,0) 99%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f000000', endColorstr='#00ffffff',GradientType=0 );
+		.container-fluid{
+			.container{
+				.brandLogo{
+					padding-right:60px;
+					padding-top:5px;
+					float:left;
+					span{
+						color:#eee;
+						font:700 25px 'Lato',sans-serif;
+						span{
+							font-size:15px;
+							font-weight: 300;
+						}
+					}
+				}
+				.menu{
+					float:left;
+					ul{
+						li{
+							a{
+								color:#fff;
+								text-transform: uppercase;
+								font:400 16px 'Raleway',sans-serif;
+								padding:0 10px 5px 10px;
+							}
+						}
+						li.active{
+							a{
+								font-weight:700;
+								border-bottom:3px solid #fff;
+							}
+						}
+					}
+				}
+				.navWidgets{
+					float:right;
+					i{
+						color:white;
+						font-size:17px;
+					}
+				}
+			}
+		}
+	}
+	.slider{
+		height: 600px;
+		.container{
+			padding-top:150px;
+			text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+			h1{
+				text-transform: uppercase;
+				color:#fff;
+				font-size:50px;
+				max-width:450px;
+			}
+			p{
+				margin-top:35px;
+				color:#fff;
+				font-size:26px;
+				line-height: 34px;
+				max-width: 500px;
+			}
+			img{
+				position:relative;
+			}
+			#tablet{
+				top:-350px;
+				left:530px;
+			}
+			#phone{
+				top:-525px;
+				left:480px;
+			}
+		}
+	}
+}
