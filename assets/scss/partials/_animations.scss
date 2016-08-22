@@ -1,0 +1,35 @@
+.animateDesktop{
+	animation: animateDesktop 1s ease;
+}
+
+	@keyframes animateDesktop{
+		0% {
+			top:-700px;}
+		55% {
+			top:20px;}
+		100% {
+			top:0px;}}
+
+.animateTablet{
+	animation: animateTablet 1s ease;
+}
+
+	@keyframes animateTablet{
+		0% {
+			top:-700px;}
+		50% {
+			top:50px;}
+		100% {
+			top:20px;}}
+
+.animatePhone{
+	animation: animatePhone 1s ease;
+}
+
+	@keyframes animatePhone{
+		0% {
+			top:-700px;}
+		60% {
+			top:55px;}
+		100% {
+			top:30px;}}

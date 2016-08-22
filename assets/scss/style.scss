@@ -76,29 +76,38 @@ p{
 		.container{
 			padding-top:150px;
 			text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
-			h1{
-				text-transform: uppercase;
-				color:#fff;
-				font-size:50px;
-				max-width:450px;
+			.text{
+				h1{
+					text-transform: uppercase;
+					color:#fff;
+					font-size:50px;
+				}
+				p{
+					margin-top:35px;
+					color:#fff;
+					font-size:26px;
+					line-height: 34px;
+				}
 			}
-			p{
-				margin-top:35px;
-				color:#fff;
-				font-size:26px;
-				line-height: 34px;
-				max-width: 500px;
-			}
-			img{
-				position:relative;
-			}
-			#tablet{
-				top:-350px;
-				left:530px;
-			}
-			#phone{
-				top:-525px;
-				left:480px;
+			.images{
+				img{
+					position:relative;
+				}
+				#desktop{
+					width:270px;
+					top:0px;
+					left:200px;
+				}
+				#tablet{
+					width:100px;
+					top:20px;
+					left:-130px;
+				}
+				#phone{
+					width:50px;
+					top:30px;
+					left:60px;
+				}
 			}
 		}
 	}

@@ -1,0 +1,1 @@
+*Add moving elements animation as cursor moves to header section (like this: https://github.com/nivs1r )

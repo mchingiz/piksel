@@ -1,3 +1,33 @@
+.animateDesktop {
+  animation: animateDesktop 1s ease; }
+
+@keyframes animateDesktop {
+  0% {
+    top: -700px; }
+  55% {
+    top: 20px; }
+  100% {
+    top: 0px; } }
+.animateTablet {
+  animation: animateTablet 1s ease; }
+
+@keyframes animateTablet {
+  0% {
+    top: -700px; }
+  50% {
+    top: 50px; }
+  100% {
+    top: 20px; } }
+.animatePhone {
+  animation: animatePhone 1s ease; }
+
+@keyframes animatePhone {
+  0% {
+    top: -700px; }
+  60% {
+    top: 55px; }
+  100% {
+    top: 30px; } }
 a:hover, a:focus {
   text-decoration: none; }
 
@@ -47,24 +77,28 @@ p {
     #header .slider .container {
       padding-top: 150px;
       text-shadow: 1px 1px 1px #969696; }
-      #header .slider .container h1 {
+      #header .slider .container .text h1 {
         text-transform: uppercase;
         color: #fff;
-        font-size: 50px;
-        max-width: 450px; }
-      #header .slider .container p {
+        font-size: 50px; }
+      #header .slider .container .text p {
         margin-top: 35px;
         color: #fff;
         font-size: 26px;
-        line-height: 34px;
-        max-width: 500px; }
-      #header .slider .container img {
+        line-height: 34px; }
+      #header .slider .container .images img {
         position: relative; }
-      #header .slider .container #tablet {
-        top: -350px;
-        left: 530px; }
-      #header .slider .container #phone {
-        top: -525px;
-        left: 480px; }
+      #header .slider .container .images #desktop {
+        width: 270px;
+        top: 0px;
+        left: 200px; }
+      #header .slider .container .images #tablet {
+        width: 100px;
+        top: 20px;
+        left: -130px; }
+      #header .slider .container .images #phone {
+        width: 50px;
+        top: 30px;
+        left: 60px; }
 
 /*# sourceMappingURL=style.css.map */
