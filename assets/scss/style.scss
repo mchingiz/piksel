@@ -108,6 +108,33 @@ p{
 					top:30px;
 					left:60px;
 				}
+				#skew1{
+					width:500px;
+					top:-140px;
+					left:20px;
+				}
+				#skew2{
+					width:400px;
+					top:-350px;
+					left:-200px;
+				}
+				#skew3{
+					width:400px;
+					top:-455px;
+					left:50px;
+				}
+			}
+		}
+		#container3{
+			padding-top:50px;
+			h1{
+				font-size:45px;
+			}
+			p{
+				font-size:20px;
+			}
+			.col-md-4{
+				padding:0;
 			}
 		}
 	}

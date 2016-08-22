@@ -28,6 +28,36 @@
     top: 55px; }
   100% {
     top: 30px; } }
+.animateSkew1 {
+  animation: animateSkew1 1.1s ease; }
+
+@keyframes animateSkew1 {
+  0% {
+    top: -700px; }
+  55% {
+    top: -110px; }
+  100% {
+    top: -140px; } }
+.animateSkew2 {
+  animation: animateSkew2 1.1s ease; }
+
+@keyframes animateSkew2 {
+  0% {
+    top: -700px; }
+  50% {
+    top: -330px; }
+  100% {
+    top: -350px; } }
+.animateSkew3 {
+  animation: animateSkew3 1.1s ease; }
+
+@keyframes animateSkew3 {
+  0% {
+    top: -700px; }
+  60% {
+    top: -430px; }
+  100% {
+    top: -455px; } }
 a:hover, a:focus {
   text-decoration: none; }
 
@@ -100,5 +130,25 @@ p {
         width: 50px;
         top: 30px;
         left: 60px; }
+      #header .slider .container .images #skew1 {
+        width: 500px;
+        top: -140px;
+        left: 20px; }
+      #header .slider .container .images #skew2 {
+        width: 400px;
+        top: -350px;
+        left: -200px; }
+      #header .slider .container .images #skew3 {
+        width: 400px;
+        top: -455px;
+        left: 50px; }
+    #header .slider #container3 {
+      padding-top: 50px; }
+      #header .slider #container3 h1 {
+        font-size: 45px; }
+      #header .slider #container3 p {
+        font-size: 20px; }
+      #header .slider #container3 .col-md-4 {
+        padding: 0; }
 
 /*# sourceMappingURL=style.css.map */
