@@ -73,6 +73,24 @@ p{
 	}
 	.slider{
 		height: 600px;
+		.fa-chevron-right, .fa-chevron-left{
+			position:absolute;
+			top:300px;
+			font-size:60px;
+			color:white;
+			opacity:.3;
+			transition-duration: .2s;
+			cursor: pointer;
+			&:hover{
+				opacity:.7;
+			}
+		}
+		.fa-chevron-left{
+			left:20px;
+		}
+		.fa-chevron-right{
+			right:20px;
+		}
 		.container{
 			padding-top:150px;
 			text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
@@ -123,9 +141,24 @@ p{
 					top:-455px;
 					left:50px;
 				}
+				/*#screen1{
+					transform: rotate(-25deg);
+					width:300px;
+					left:50px;
+				}*/
+				#screen2{
+					transform: rotate(-30deg);
+					width:250px;
+					left:50px;
+					-webkit-box-shadow: -10px 10px 62px -14px rgba(0,0,0,0.75);
+					-moz-box-shadow: -10px 10px 62px -14px rgba(0,0,0,0.75);
+					box-shadow: -10px 10px 62px -14px rgba(0,0,0,0.75);
+				}
 			}
 		}
+		#container2{display:none;}
 		#container3{
+			display:none;
 			padding-top:50px;
 			h1{
 				font-size:45px;
