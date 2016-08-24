@@ -15,6 +15,31 @@ h1{
 	font-family:'Lato',sans-serif;}
 p{
 	font-family: 'Raleway',sans-serif;}
+
+section{
+	text-align:center;}
+
+// Custom classes
+.bggray{
+	background-color: #F5F6F8;}
+
+.sectionHeading{
+	text-transform: uppercase;
+	font:300 50px/180px 'Raleway';
+	margin:0;}
+
+.btn{
+	background-color: transparent;
+	border:1px solid $mainColor;
+	border-radius:4px;
+	color:$mainColor;
+	padding:15px 25px;
+	margin:0 7px;
+	text-transform: uppercase;
+	transition-duration: .2s;
+	&:hover{
+		background-color: $mainColor;
+		color:#fff;}}
 // General classes
 
 #header{
@@ -174,13 +199,7 @@ p{
 }
 
 #offers{
-	background-color: $bgColor;
 	.container-fluid{
-		text-align: center;
-		h1{
-			font:300 50px/180px 'Raleway';
-			margin:0;
-		}
 		.container{
 			padding-bottom: 60px;
 			.col-md-3{
@@ -209,6 +228,71 @@ p{
 				&:last-child{
 					.offer{
 						background-color: #5BD4B6;}}
+			}
+		}
+	}
+}
+
+#packages{
+	.container{
+		padding-bottom:50px;
+		.col-md-4{
+			padding:15px;
+			.package{
+				background-color:#f7f7f7;
+				padding-bottom: 50px;
+				animation-duration: 1s;
+				h1{
+					text-transform: uppercase;
+					font-size:25px;
+					font-weight: 300;
+					line-height: 60px;
+					margin:0;}
+				.price{
+					background-color: $bggray;
+					width:100%;
+					padding-bottom:10px;
+					h2{
+						color: $mainColor;
+						font:300 115px 'Lato';
+						margin: 0;
+						span{
+							font-size:47px;
+							vertical-align:top;
+							position: relative;
+							top:15px;}}
+					p{
+						color: $mainColor;
+						margin: 0;
+						text-transform: uppercase;}}
+				.description{
+					padding:0 50px;
+					ul{
+						li{
+							border-bottom:1px solid $borderColor;
+							padding: 20px 0;
+							&:last-child{
+								border: none;}}}
+					.btn{
+						width:100%;
+						margin-top:15px;
+						transition-duration: 0;
+					}
+				}
+				&:hover {
+					background-color:$mainColor;
+					h1,h2,p,li{
+						color:#fff;
+					}
+					.price{
+						background-color:darken($mainColor,10%);
+					}
+					.btn{
+						background-color: #fff;
+						color:$mainColor;
+						border-color:#fff;
+					}
+				}
 			}
 		}
 	}

@@ -67,6 +67,30 @@ h1 {
 p {
   font-family: 'Raleway',sans-serif; }
 
+section {
+  text-align: center; }
+
+.bggray {
+  background-color: #F5F6F8; }
+
+.sectionHeading {
+  text-transform: uppercase;
+  font: 300 50px/180px 'Raleway';
+  margin: 0; }
+
+.btn {
+  background-color: transparent;
+  border: 1px solid #12B0E2;
+  border-radius: 4px;
+  color: #12B0E2;
+  padding: 15px 25px;
+  margin: 0 7px;
+  text-transform: uppercase;
+  transition-duration: .2s; }
+  .btn:hover {
+    background-color: #12B0E2;
+    color: #fff; }
+
 #header {
   background-image: url(../img/bg1.jpg);
   background-size: cover;
@@ -181,32 +205,78 @@ p {
       #header .slider #container3 .col-md-4 {
         padding: 0; }
 
-#offers {
-  background-color: #F5F6F8; }
-  #offers .container-fluid {
-    text-align: center; }
-    #offers .container-fluid h1 {
-      font: 300 50px/180px 'Raleway';
-      margin: 0; }
-    #offers .container-fluid .container {
-      padding-bottom: 60px; }
-      #offers .container-fluid .container .col-md-3 .offer {
-        padding: 30px 20px 20px 20px;
-        color: #fff; }
-        #offers .container-fluid .container .col-md-3 .offer i {
-          font-size: 50px; }
-        #offers .container-fluid .container .col-md-3 .offer h5 {
-          text-transform: uppercase;
-          padding: 20px 0 10px 0;
-          font-weight: 700;
-          font-size: 14px; }
-      #offers .container-fluid .container .col-md-3:first-child .offer {
-        background-color: #50A2DE; }
-      #offers .container-fluid .container .col-md-3:nth-child(2) .offer {
-        background-color: #50C5DE; }
-      #offers .container-fluid .container .col-md-3:nth-child(3) .offer {
-        background-color: #5FCBCD; }
-      #offers .container-fluid .container .col-md-3:last-child .offer {
-        background-color: #5BD4B6; }
+#offers .container-fluid .container {
+  padding-bottom: 60px; }
+  #offers .container-fluid .container .col-md-3 .offer {
+    padding: 30px 20px 20px 20px;
+    color: #fff; }
+    #offers .container-fluid .container .col-md-3 .offer i {
+      font-size: 50px; }
+    #offers .container-fluid .container .col-md-3 .offer h5 {
+      text-transform: uppercase;
+      padding: 20px 0 10px 0;
+      font-weight: 700;
+      font-size: 14px; }
+  #offers .container-fluid .container .col-md-3:first-child .offer {
+    background-color: #50A2DE; }
+  #offers .container-fluid .container .col-md-3:nth-child(2) .offer {
+    background-color: #50C5DE; }
+  #offers .container-fluid .container .col-md-3:nth-child(3) .offer {
+    background-color: #5FCBCD; }
+  #offers .container-fluid .container .col-md-3:last-child .offer {
+    background-color: #5BD4B6; }
+
+#packages .container {
+  padding-bottom: 50px; }
+  #packages .container .col-md-4 {
+    padding: 15px; }
+    #packages .container .col-md-4 .package {
+      background-color: #f7f7f7;
+      padding-bottom: 50px;
+      animation-duration: 1s; }
+      #packages .container .col-md-4 .package h1 {
+        text-transform: uppercase;
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 60px;
+        margin: 0; }
+      #packages .container .col-md-4 .package .price {
+        background-color: #F0F0F0;
+        width: 100%;
+        padding-bottom: 10px; }
+        #packages .container .col-md-4 .package .price h2 {
+          color: #12B0E2;
+          font: 300 115px 'Lato';
+          margin: 0; }
+          #packages .container .col-md-4 .package .price h2 span {
+            font-size: 47px;
+            vertical-align: top;
+            position: relative;
+            top: 15px; }
+        #packages .container .col-md-4 .package .price p {
+          color: #12B0E2;
+          margin: 0;
+          text-transform: uppercase; }
+      #packages .container .col-md-4 .package .description {
+        padding: 0 50px; }
+        #packages .container .col-md-4 .package .description ul li {
+          border-bottom: 1px solid #E9E9E9;
+          padding: 20px 0; }
+          #packages .container .col-md-4 .package .description ul li:last-child {
+            border: none; }
+        #packages .container .col-md-4 .package .description .btn {
+          width: 100%;
+          margin-top: 15px;
+          transition-duration: 0; }
+      #packages .container .col-md-4 .package:hover {
+        background-color: #12B0E2; }
+        #packages .container .col-md-4 .package:hover h1, #packages .container .col-md-4 .package:hover h2, #packages .container .col-md-4 .package:hover p, #packages .container .col-md-4 .package:hover li {
+          color: #fff; }
+        #packages .container .col-md-4 .package:hover .price {
+          background-color: #0e8bb3; }
+        #packages .container .col-md-4 .package:hover .btn {
+          background-color: #fff;
+          color: #12B0E2;
+          border-color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
