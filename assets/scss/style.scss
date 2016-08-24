@@ -357,3 +357,49 @@ section{
 		}
 	}
 }
+
+#portfolio{
+	padding-bottom:60px;
+	.container-fluid{
+		.container{
+			.row{
+				padding:10px 0;
+				.col-md-4{
+					.portItem{
+						position: relative;
+						.itemImg{
+							img{
+								width:100%;
+							}
+						}
+						.itemAbout{
+							padding:10px;
+							padding-top:35px;
+							background-color: rgba($mainColor,.3);
+							visibility:hidden;
+							position: absolute;
+							top:0;
+							width:100%;
+							height: 100%;
+							text-shadow: 2px 2px 5px rgba(150, 150, 150, 1);
+							span{
+								color:#fff;
+							}
+							a{
+								i{
+									font-size:80px;
+									margin-top:30px;
+									color:#fff;
+									display: block;
+								}
+							}
+						}
+						&:hover > .itemAbout{
+							visibility: visible;
+						}
+					}
+				}
+			}
+		}
+	}
+}

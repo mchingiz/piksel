@@ -323,4 +323,32 @@ section {
 #team .container .col-md-3 .teamMember:hover > .overlap > .memberAbout {
   visibility: visible; }
 
+#portfolio {
+  padding-bottom: 60px; }
+  #portfolio .container-fluid .container .row {
+    padding: 10px 0; }
+    #portfolio .container-fluid .container .row .col-md-4 .portItem {
+      position: relative; }
+      #portfolio .container-fluid .container .row .col-md-4 .portItem .itemImg img {
+        width: 100%; }
+      #portfolio .container-fluid .container .row .col-md-4 .portItem .itemAbout {
+        padding: 10px;
+        padding-top: 35px;
+        background-color: rgba(18, 176, 226, 0.3);
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        text-shadow: 2px 2px 5px #969696; }
+        #portfolio .container-fluid .container .row .col-md-4 .portItem .itemAbout span {
+          color: #fff; }
+        #portfolio .container-fluid .container .row .col-md-4 .portItem .itemAbout a i {
+          font-size: 80px;
+          margin-top: 30px;
+          color: #fff;
+          display: block; }
+      #portfolio .container-fluid .container .row .col-md-4 .portItem:hover > .itemAbout {
+        visibility: visible; }
+
 /*# sourceMappingURL=style.css.map */
