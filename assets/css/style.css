@@ -279,4 +279,48 @@ section {
           color: #12B0E2;
           border-color: #fff; }
 
+#team .container .col-md-3 .teamMember .overlap {
+  position: relative;
+  height: auto; }
+  #team .container .col-md-3 .teamMember .overlap .memberImg img {
+    width: 100%; }
+  #team .container .col-md-3 .teamMember .overlap .memberAbout {
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    background-color: rgba(26, 198, 255, 0.8);
+    color: #fff; }
+    #team .container .col-md-3 .teamMember .overlap .memberAbout ul {
+      position: relative;
+      top: 30px; }
+      #team .container .col-md-3 .teamMember .overlap .memberAbout ul li {
+        padding-right: 0; }
+        #team .container .col-md-3 .teamMember .overlap .memberAbout ul li a i {
+          width: 28px;
+          height: 28px;
+          color: #fff;
+          border: 1px solid #fff;
+          border-radius: 5px;
+          padding: 5px; }
+          #team .container .col-md-3 .teamMember .overlap .memberAbout ul li a i:hover {
+            background-color: #fff;
+            color: #12B0E2; }
+#team .container .col-md-3 .teamMember h1 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #12B0E2;
+  text-transform: uppercase;
+  margin-bottom: 0px; }
+#team .container .col-md-3 .teamMember h2 {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 5px; }
+#team .container .col-md-3 .teamMember:hover > .overlap > .memberAbout {
+  visibility: visible; }
+
 /*# sourceMappingURL=style.css.map */

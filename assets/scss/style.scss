@@ -297,3 +297,63 @@ section{
 		}
 	}
 }
+
+#team{
+	.container{
+		.col-md-3{
+			.teamMember{
+				.overlap{
+					position: relative;
+					height: auto;
+					.memberImg{
+						img{width: 100%;}}
+					.memberAbout{
+						padding: 30px;
+						position: absolute;
+						top:0;left:0;
+						height: 100%;
+						width:100%;
+						visibility:hidden;
+						background-color: rgba(26,198,255,.8);
+						color:#fff;
+						ul{
+							position: relative;
+							top: 30px;
+							li{
+								padding-right: 0;
+								a{
+									i{
+										width:28px;
+										height: 28px;
+										color:#fff;
+										border:1px solid #fff;
+										border-radius:5px;
+										padding:5px;
+										&:hover{
+											background-color: #fff;
+											color:$mainColor;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				h1{
+					font-size:16px;
+					font-weight: 700;
+					line-height: 25px;
+					color:$mainColor;
+					text-transform: uppercase;
+					margin-bottom: 0px;}
+				h2{
+					font-size: 14px;
+					line-height: 20px;
+					margin-top:5px;}
+				&:hover > .overlap > .memberAbout{
+					visibility: visible;
+				}
+			}
+		}
+	}
+}
