@@ -172,3 +172,44 @@ p{
 		}
 	}
 }
+
+#offers{
+	background-color: $bgColor;
+	.container-fluid{
+		text-align: center;
+		h1{
+			font:300 50px/180px 'Raleway';
+			margin:0;
+		}
+		.container{
+			padding-bottom: 60px;
+			.col-md-3{
+				.offer{
+					padding:30px 20px 20px 20px;
+					i{
+						font-size:50px;
+					}
+					color:#fff;
+					h5{
+						text-transform: uppercase;
+						padding:20px 0 10px 0;
+						font-weight: 700;
+						font-size: 14px;
+					}
+				}
+				&:first-child{
+					.offer{
+						background-color: #50A2DE;}}
+				&:nth-child(2){
+					.offer{
+						background-color: #50C5DE;}}
+				&:nth-child(3){
+					.offer{
+						background-color: #5FCBCD;}}
+				&:last-child{
+					.offer{
+						background-color: #5BD4B6;}}
+			}
+		}
+	}
+}

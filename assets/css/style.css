@@ -181,4 +181,32 @@ p {
       #header .slider #container3 .col-md-4 {
         padding: 0; }
 
+#offers {
+  background-color: #F5F6F8; }
+  #offers .container-fluid {
+    text-align: center; }
+    #offers .container-fluid h1 {
+      font: 300 50px/180px 'Raleway';
+      margin: 0; }
+    #offers .container-fluid .container {
+      padding-bottom: 60px; }
+      #offers .container-fluid .container .col-md-3 .offer {
+        padding: 30px 20px 20px 20px;
+        color: #fff; }
+        #offers .container-fluid .container .col-md-3 .offer i {
+          font-size: 50px; }
+        #offers .container-fluid .container .col-md-3 .offer h5 {
+          text-transform: uppercase;
+          padding: 20px 0 10px 0;
+          font-weight: 700;
+          font-size: 14px; }
+      #offers .container-fluid .container .col-md-3:first-child .offer {
+        background-color: #50A2DE; }
+      #offers .container-fluid .container .col-md-3:nth-child(2) .offer {
+        background-color: #50C5DE; }
+      #offers .container-fluid .container .col-md-3:nth-child(3) .offer {
+        background-color: #5FCBCD; }
+      #offers .container-fluid .container .col-md-3:last-child .offer {
+        background-color: #5BD4B6; }
+
 /*# sourceMappingURL=style.css.map */
