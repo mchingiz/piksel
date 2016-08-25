@@ -35,9 +35,9 @@
   0% {
     top: -700px; }
   55% {
-    top: -110px; }
+    top: -120px; }
   100% {
-    top: -140px; } }
+    top: -160px; } }
 .animateSkew2 {
   animation: animateSkew2 1.1s ease; }
 
@@ -55,16 +55,16 @@
   0% {
     top: -700px; }
   60% {
-    top: -430px; }
+    top: -420px; }
   100% {
-    top: -455px; } }
+    top: -445px; } }
 a:hover, a:focus {
   text-decoration: none; }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato',sans-serif; }
 
-p {
+p, span {
   font-family: 'Raleway',sans-serif; }
 
 section {
@@ -176,16 +176,16 @@ section {
           left: 60px; }
         #header .slider .container .images #skew1 {
           width: 500px;
-          top: -140px;
-          left: 20px; }
+          top: -160px;
+          left: 10px; }
         #header .slider .container .images #skew2 {
           width: 400px;
           top: -350px;
-          left: -200px; }
+          left: -220px; }
         #header .slider .container .images #skew3 {
           width: 400px;
-          top: -455px;
-          left: 50px; }
+          top: -445px;
+          left: 40px; }
         #header .slider .container .images #screen2 {
           transform: rotate(-30deg);
           width: 250px;
@@ -324,17 +324,24 @@ section {
   visibility: visible; }
 
 #portfolio {
-  padding-bottom: 60px; }
+  padding-bottom: 20px; }
   #portfolio .container-fluid .container .row {
-    padding: 10px 0; }
+    padding: 30px 0; }
     #portfolio .container-fluid .container .row .col-md-4 .portItem {
-      position: relative; }
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+      border: 1px solid #E9E9E9;
+      -webkit-box-shadow: 0px 10px 16px -13px black;
+      -moz-box-shadow: 0px 10px 16px -13px black;
+      box-shadow: 0px 10px 16px -13px black; }
       #portfolio .container-fluid .container .row .col-md-4 .portItem .itemImg img {
-        width: 100%; }
+        width: 100%;
+        position: relative; }
       #portfolio .container-fluid .container .row .col-md-4 .portItem .itemAbout {
         padding: 10px;
         padding-top: 35px;
-        background-color: rgba(18, 176, 226, 0.3);
+        background-color: rgba(3, 29, 37, 0.5);
         visibility: hidden;
         position: absolute;
         top: 0;
@@ -343,7 +350,7 @@ section {
         text-shadow: 2px 2px 5px #969696; }
         #portfolio .container-fluid .container .row .col-md-4 .portItem .itemAbout span {
           color: #fff; }
-        #portfolio .container-fluid .container .row .col-md-4 .portItem .itemAbout a i {
+        #portfolio .container-fluid .container .row .col-md-4 .portItem .itemAbout i {
           font-size: 80px;
           margin-top: 30px;
           color: #fff;

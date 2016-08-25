@@ -11,9 +11,9 @@ a:hover, a:focus{
 	text-decoration: none;
 }
 
-h1{
+h1,h2,h3,h4,h5,h6{
 	font-family:'Lato',sans-serif;}
-p{
+p,span{
 	font-family: 'Raleway',sans-serif;}
 
 section{
@@ -153,18 +153,18 @@ section{
 				}
 				#skew1{
 					width:500px;
-					top:-140px;
-					left:20px;
+					top:-160px;
+					left:10px;
 				}
 				#skew2{
 					width:400px;
 					top:-350px;
-					left:-200px;
+					left:-220px;
 				}
 				#skew3{
 					width:400px;
-					top:-455px;
-					left:50px;
+					top:-445px;
+					left:40px;
 				}
 				/*#screen1{
 					transform: rotate(-25deg);
@@ -181,7 +181,7 @@ section{
 				}
 			}
 		}
-		#container2{display:none;}
+		#container2{display: none;}
 		#container3{
 			display:none;
 			padding-top:50px;
@@ -359,23 +359,30 @@ section{
 }
 
 #portfolio{
-	padding-bottom:60px;
+	padding-bottom:20px;
 	.container-fluid{
 		.container{
 			.row{
-				padding:10px 0;
+				padding:30px 0;
 				.col-md-4{
 					.portItem{
 						position: relative;
+						height: 200px;
+						overflow: hidden;
+						border:1px solid $borderColor;
+						-webkit-box-shadow: 0px 10px 16px -13px rgba(0,0,0,1);
+						-moz-box-shadow: 0px 10px 16px -13px rgba(0,0,0,1);
+						box-shadow: 0px 10px 16px -13px rgba(0,0,0,1);
 						.itemImg{
 							img{
 								width:100%;
+								position: relative; //To align individually later
 							}
 						}
 						.itemAbout{
 							padding:10px;
 							padding-top:35px;
-							background-color: rgba($mainColor,.3);
+							background-color: rgba(darken($mainColor,40%),.5);
 							visibility:hidden;
 							position: absolute;
 							top:0;
@@ -385,13 +392,11 @@ section{
 							span{
 								color:#fff;
 							}
-							a{
-								i{
-									font-size:80px;
-									margin-top:30px;
-									color:#fff;
-									display: block;
-								}
+							i{
+								font-size:80px;
+								margin-top:30px;
+								color:#fff;
+								display: block;
 							}
 						}
 						&:hover > .itemAbout{
