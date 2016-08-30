@@ -439,12 +439,13 @@ section {
       #offers .container-fluid .container .col-md-3 {
         margin-top: -1px;
         padding-left: 0;
-        padding-right: 0;
-        height: 250px; }
-        #offers .container-fluid .container .col-md-3 .offer h5, #offers .container-fluid .container .col-md-3 .offer p {
-          font-size: 18px !important; }
-        #offers .container-fluid .container .col-md-3:last-child .offer {
-          padding-bottom: 0px; }
+        padding-right: 0; }
+        #offers .container-fluid .container .col-md-3 .offer {
+          padding: 40px 20px; }
+          #offers .container-fluid .container .col-md-3 .offer p {
+            font-size: 18px !important;
+            padding-bottom: 0;
+            margin-bottom: 0; }
 
   #portfolio .row {
     padding: 0 !important; }

@@ -50,19 +50,6 @@
 	// Make menu fixed
 	//if( wScroll > ( $("#logos").offset().top - wHeight/1.4) )
 
-// Offers
-	// Function to make all divs' height same
-	if($(window).width() > 992){
-			var maxHeight=0;
-			for(i=1;i<=4;i++){
-				thisH=$("#offers .col-md-3:nth-child("+i+")").height();
-				if(thisH>maxHeight){
-					maxHeight=thisH;
-				}
-			}
-			$("#offers .col-md-3 .offer").height(thisH);
-		}
-
 // Portfolio
 	// Hover animations
 	$("#portfolio .portItem").mouseenter(function(){
@@ -72,15 +59,3 @@
 	$("#portfolio .portItem").mouseleave(function(){
 		$(this).find("img").animate({width:"100%",left:"0",top:"0"},300);
 	})
-	
-//Packages
-	// Function to make all packages the same height
-	var maxHe=0;
-	for(i=1;i<=3;i++){
-		thisH=$("#packages .col-md-4:nth-child("+i+")").height();
-		console.log(thisH);
-		/*if(thisH>maxHe){
-			maxHe=thisH;
-		}*/
-	}
-	$("#packages .col-md-4 .package").height(thisH);
