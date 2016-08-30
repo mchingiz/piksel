@@ -1,2 +1,3 @@
 *Add moving elements animation as cursor moves to header section (like this: https://github.com/nivs1r )
 *Doesnt change the background of header section when next and prev buttons clicked
+*The image at container3 doesnt move horizontally when screen size is below 1200px

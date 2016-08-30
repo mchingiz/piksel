@@ -44,7 +44,7 @@
 		
 		// Container3
 		$("#screen3").css("top",200+Y/85).css("left",X/85-50);
-		$("#container3 h1, #container3 p").css("position","relative").css("top",Y/60).css("left",X/60);
+		$("#container3 h1, #container3 p").css("position","relative").css("top",Y/70).css("left",X/70);
 	})
 	
 	// Make menu fixed

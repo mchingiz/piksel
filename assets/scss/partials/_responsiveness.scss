@@ -1,0 +1,120 @@
+@media screen and (max-width: 1200px) {
+#header{
+	.slider{
+		.container{
+			padding-top:50px;
+		}
+		#container1{
+			.images{
+				padding-top:100px;
+			}
+		}
+		#container2{
+			.images{
+				padding-top:100px;
+			}
+		}
+		#container3{
+			#screen3{
+				left:-130px !important;
+			}
+		}
+	}
+}
+
+#offers{
+	.col-md-3{
+		.offer{
+			p{padding-bottom:20px;}
+		}
+	}
+}
+	
+#team{
+	.teamMember{
+		.memberAbout{
+			ul{
+				li{
+					margin:5px 0;
+				}
+			}
+		}
+	}
+}
+}// Large devices (large desktops, 1200px and up)
+
+@media screen and (max-width: 992px) { 
+#header{
+	.slider{
+		#container3{
+			.col-md-4{
+				text-align: center !important;
+				&:first-child{
+					padding-bottom:35px;
+				}
+			}
+		}
+	}
+}
+
+#offers{
+	.col-md-3{
+		.offer{
+			i{
+				margin-top:70px;
+			}
+			h5,p {
+				font-size:18px !important;
+			}
+		}
+	}
+}
+
+#portfolio{
+	.row{
+		padding:0 !important;
+		.col-md-4{
+			padding:25px 15px;
+			.portItem{
+				height: 400px !important;
+			}
+		}
+	}
+}
+
+#packages{
+	.col-md-4{
+		.package{
+			.description{
+				.btn{
+					padding:15px 0;
+				}
+			}
+		}
+	}
+}
+
+#footer{
+	.col-sm-12{
+		p{text-align: center;}
+		form{
+			text-align: center;
+			input{
+				width:50%;
+			}
+			input#submit{
+				width:10%;
+			}
+		}
+		padding-bottom:50px;
+	}
+}
+
+}// Medium devices (desktops, 992px and up) 
+
+@media screen and (max-width: 768px) { 
+	
+}// Small devices (tablets, 768px and up)
+
+
+
