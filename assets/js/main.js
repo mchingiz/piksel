@@ -1,5 +1,8 @@
 // Header
 	// Slider
+
+	var wHeight=$(this).height();
+	var wScroll=$(this).scrollTop();
 	var sliderNum=1;
 	$("#header .fa-chevron-right").on("click",function(){
 		$("#header #container"+sliderNum).fadeOut(400);
@@ -40,12 +43,12 @@
 		$("#container2 h1, #container2 p").css("position","relative").css("top",Y/70).css("left",X/70);
 		
 		// Container3
-		$("#skew1").css("top",Y/100-160).css("left",10+X/100);
-		$("#skew2").css("top",Y/70-350).css("left",X/70-220);
-		$("#skew3").css("top",Y/85-445).css("left",40+X/85);
-		$("#container3 h1, #container3 p").css("position","relative").css("top",Y/70).css("left",X/70);
+		$("#screen3").css("top",200+Y/85).css("left",X/85-50);
+		$("#container3 h1, #container3 p").css("position","relative").css("top",Y/60).css("left",X/60);
 	})
 	
+	// Make menu fixed
+	//if( wScroll > ( $("#logos").offset().top - wHeight/1.4) )
 
 // Offers
 	// Function to make all divs' height same
@@ -67,3 +70,15 @@
 	$("#portfolio .portItem").mouseleave(function(){
 		$(this).find("img").animate({width:"100%",left:"0",top:"0"},300);
 	})
+	
+//Packages
+	// Function to make all packages the same height
+	var maxHe=0;
+	for(i=1;i<=3;i++){
+		thisH=$("#packages .col-md-4:nth-child("+i+")").height();
+		console.log(thisH);
+		/*if(thisH>maxHe){
+			maxHe=thisH;
+		}*/
+	}
+	$("#packages .col-md-4 .package").height(thisH);
