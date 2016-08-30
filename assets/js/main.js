@@ -52,14 +52,16 @@
 
 // Offers
 	// Function to make all divs' height same
-	var maxHeight=0;
-	for(i=1;i<=4;i++){
-		thisH=$("#offers .col-md-3:nth-child("+i+")").height();
-		if(thisH>maxHeight){
-			maxHeight=thisH;
+	if($(window).width() > 992){
+			var maxHeight=0;
+			for(i=1;i<=4;i++){
+				thisH=$("#offers .col-md-3:nth-child("+i+")").height();
+				if(thisH>maxHeight){
+					maxHeight=thisH;
+				}
+			}
+			$("#offers .col-md-3 .offer").height(thisH);
 		}
-	}
-	$("#offers .col-md-3 .offer").height(thisH);
 
 // Portfolio
 	// Hover animations

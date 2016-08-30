@@ -429,10 +429,22 @@ section {
     #header .slider #container3 .col-md-4:first-child {
       padding-bottom: 35px; }
 
-  #offers .col-md-3 .offer i {
-    margin-top: 70px; }
-  #offers .col-md-3 .offer h5, #offers .col-md-3 .offer p {
-    font-size: 18px !important; }
+  #offers .container-fluid {
+    padding-left: 0;
+    padding-right: 0; }
+    #offers .container-fluid .container {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0; }
+      #offers .container-fluid .container .col-md-3 {
+        margin-top: -1px;
+        padding-left: 0;
+        padding-right: 0;
+        height: 250px; }
+        #offers .container-fluid .container .col-md-3 .offer h5, #offers .container-fluid .container .col-md-3 .offer p {
+          font-size: 18px !important; }
+        #offers .container-fluid .container .col-md-3:last-child .offer {
+          padding-bottom: 0px; }
 
   #portfolio .row {
     padding: 0 !important; }

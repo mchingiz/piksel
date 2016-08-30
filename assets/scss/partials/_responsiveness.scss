@@ -58,13 +58,28 @@
 }
 
 #offers{
-	.col-md-3{
-		.offer{
-			i{
-				margin-top:70px;
-			}
-			h5,p {
-				font-size:18px !important;
+	.container-fluid{
+		padding-left:0;
+		padding-right:0;
+		.container{
+			width:100%;
+			padding-left:0;
+			padding-right:0;
+			.col-md-3{
+				margin-top:-1px;
+				padding-left:0;
+				padding-right:0;
+				height: 250px;
+				.offer{
+					h5,p {
+						font-size:18px !important;
+					}
+				}
+				&:last-child{
+					.offer{
+						padding-bottom:0px;
+					}
+				}
 			}
 		}
 	}
